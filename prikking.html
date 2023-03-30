@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="stiler.css">
+
+<h1>Her kan du se tall med og uten prikker</h1>
+<p>
+Klarer du å regne ut hvilke tall som skjuler seg bak prikkene? Ingen juksing!
+</p>
+
+<script>
+function vis(prikk) {
+	if (prikk == 0) {
+		document.getElementById('c1').innerHTML = '0';
+		document.getElementById('c3').innerHTML = '1';
+		document.getElementById('c4').innerHTML = '5';
+	} else {
+		document.getElementById('c1').innerHTML = '*';
+		document.getElementById('c3').innerHTML = '*';
+		document.getElementById('c4').innerHTML = '*';
+	}
+}
+</script>
+
+<table>
+<tr>
+<th>Snitt</th>
+<th>Antall svar</th>
+<th>Svært misfornøyd</th>
+<th>Ganske misfornøyd</th>
+<th>Verken/eller</th>
+<th>Ganske fornøyd</th>
+<th>Svært fornøyd</th>
+</tr>
+<tr>
+<td>4,5</td>
+<td>14</td>
+<td id="c1">*</td>
+<td id="c2">0</td>
+<td id="c3">*</td>
+<td id="c4">*</td>
+<td id="c5">8</td>
+</tr>
+</table>
+
+<p>
+<button type="button" onclick="vis(1)">Med prikker</button>
+<button type="button" onclick="vis(0)">Uten prikker</button>
+</p>
+
+</html>

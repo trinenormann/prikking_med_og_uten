@@ -1,0 +1,13 @@
+body {
+	background-color: #E2E3F1;
+	color: #666883;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	text-align: center;
+}
